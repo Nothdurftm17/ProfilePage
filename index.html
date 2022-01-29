@@ -1,105 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="nav">
-            <h1 class="nav-title">Profile</h1>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button class="btn">Sign Out</button></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navBar">
+        <p>Profile</p>
+        <div id="nav-links">
+            <ul>
+                <li>Home</li>
+                <li>My Profile</li>
+                <li>Find Connections</li>
             </ul>
         </div>
-        <div id="container">
-            <div class="bar"></div>
-            <div class="info">
-                <div id="proPic">
-                    <img src="images/jane-m.jpg" alt="User Icon">
+        <button>Sign Out</button>
+    </div>
+    <div id="pageContainer">
+        <div id="leftSide">
+            <div id="userCard">
+                <div id="userCard-Top">
+                    <img src="images/jane-m.jpg" alt="" id="jane">
                 </div>
-                <div>
-                    <h1 id="name">Jane Bane</h1>
-                </div>
-                <div id="city">
-                    <img src="./images/map-marker.png" alt="Map Marker">
-                    <p>Scranton</p>
-                </div>
-                    <p class="bio">Developer | Engineer | Problem Solver</p>
-                    <p class="bio">Master of shadows and the Internet!</p>
-            <div id="editProf">
-                <a url="editprofile"><img src="images/gear.png" alt="Settings Icon"></a>
-            </div>
-        </div>
-        <div id="edHead">
-            <p>Education</p>
-        </div>
-        <div id="edContainer">
-            <p id="cd">Coding Dojo - Full Stack Bootcamp</p>
-            <p id="date">Dec 2019 - Mar 2020</p>
-            <p id="lang">Triple black belt in Python,MERN, and C#...</p>
-        </div>
-        <div id="conReq">
-            <p id="two">2</p>
-            <p id="cr">Connection Requests</p>
-        </div>
-        <div id="crCont">
-            <div>
-                <img src="images/todd-s.jpg" alt="Todd">
-                <p id="te">Todd E</p>
-                <div id="accClose">
-                    <img src="./images/accept-circle.png" alt="accept">
-                </div>
-                <div id="close">
-                    <img src="./images/close-circle.png" alt="close">
+                <div id="userCard-Bottom">
+                    <h1>Jane Bane</h1>
+                    <div id="city">
+                        <img src="./images/map-marker.png" alt="map marker" id="map">
+                        <p id="scranton">Scranton</p>
+                    </div>
+                    <div id="userInfo">
+                        <p>Developer| Engineer| Problem Solver</p>
+                        <p>Master of shadows and the Internet</p>
+                    </div>
+                    <a href="editprofile"><img src="./images/gear.png" alt="edit profile" id="gear"></a>
                 </div>
             </div>
-            <div>
-                <div id="pkPic">
-                    <img src="images/phil-s.jpg" alt="pk">
+            <div id="edu-Box">
+                <div id="eduHead">
+                    <h3>Education</h3>
                 </div>
-                <p id="pk">Phil K</p>
-                <div id="accClose-2">
-                    <img src="./images/accept-circle.png" alt="accept">
-                </div>
-                <div id="close-2">
-                    <img src="./images/close-circle.png" alt="close">
+                <div id="edBody">
+                    <p>Coding Dojo - Full Stack Bootcamp</p>
+                    <p id="date">Jan 2022 - May 2022</p>
+                    <p> Trible black belt in Python, MERN, and C#...</p>
                 </div>
             </div>
         </div>
-        <div id="yourConnect">
-            <p id=five>500+</p>
-            <p id="yc">Your Connections</p>
+        <div id="rightSide">
+            <div id="crBox">
+                <div id="crHead">
+                    <p id="two">2</p>
+                    <p>Connection Requests</p>
+                </div>
+                <div id="crBody">
+                    <div class="crPeople">
+                        <img src="./images/todd-s.jpg" alt="Todd E"> <span class="names">Todd E</span>
+                        <div class="acceptClose">
+                            <img src="./images/accept-circle.png" alt="Accept">
+                            <img src="./images/close-circle.png" alt="Close">
+                        </div>
+                    </div>
+                    <div class="crPeople">
+                        <img src="./images/phil-s.jpg" alt="Phil K"><span class="names">Phil K</span>
+                        <div class="acceptClose">
+                            <img src="./images/accept-circle.png" alt="Accept">
+                            <img src="./images/close-circle.png" alt="Close">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ycBox">
+                <div id="ycHead">
+                    <p id="fiveHundred">500+</p>
+                    <p>Your Connections</p>
+                </div>
+                <div id="ycBody">
+                    <div>
+                        <img src="./images/adrien-s.jpg" alt="Adrien D" class="ycImg"><span class="namesYC">Adrien D</span>
+                    </div>
+                    <div>
+                        <img src="./images/anne-s.jpg" alt="Anne J" class="ycImg"><span class="namesYC">Anne J</span>
+                    </div>
+                    <div>
+                        <img src="./images/alayne-s.jpg" alt="Alayne T" class="ycImg"><span class="namesYC">Alayne T</span>
+                    </div>
+                    <div>
+                        <img src="./images/arry-s.jpg" alt="Arry Y" class="ycImg"><span class="namesYC">Arry Y</span>
+                    </div>
+                    <a href="viewmore"id="viewMore">View More</a>
+                </div>
+            </div>
         </div>
-        <div id="ycCont">
-            <div>
-                <img src="images/adrien-s.jpg" alt="Adrien D">
-                <p id="ad">Adrien D</p>
-            </div>
-            <div>
-                <img src="images/anne-s.jpg" alt="Anne J">
-                <p id="aj">Anne J</p>
-            </div>
-            <div>
-                <img src="images/alayne-s.jpg" alt="Alayne T">
-                <p id="at">Alayne T</p>
-            </div>
-            <div>
-                <img src="images/arry-s.jpg" alt="Arry Y">
-                <p id="ay">Arry Y</p>
-            </div>
-            <div id="vmDivider">
-                <a href="viewmore" id="vm">View More</a>
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
-
