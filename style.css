@@ -42,7 +42,6 @@ ul li{
     display: flex;
     flex-direction: column;
 }
-/* User Card------------------------------ */
 #userCard{
     display: flex;
     flex-direction: column;
@@ -103,7 +102,6 @@ h1{
 #gear{
     height: 20px;
 }
-/* education--------------------------- */
 #edu-Box{
     display: flex;
     flex-direction: column;
