@@ -20,9 +20,9 @@ function closeRequest2(){
 // var counter = 2
 // var counterElement= document.querySelector('#counter')
 
-function subtractFromCR(){
-    document.querySelector('#counter').innerText--;
-}
+// function subtractFromCR(){
+//     document.querySelector('#counter').innerText--;
+// }
 
 function switchName(){
     var profileName = document.querySelector('#profileName')
