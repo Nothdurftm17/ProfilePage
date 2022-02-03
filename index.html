@@ -30,7 +30,7 @@
                     <img src="images/jane-m.jpg" alt="" id="jane">
                 </div>
                 <div id="userCard-Bottom">
-                    <h1>Jane Bane</h1>
+                    <h1 id="profileName">Jane Bane</h1>
                     <div id="city">
                         <img src="./images/map-marker.png" alt="map marker" id="map">
                         <p id="scranton">Scranton</p>
@@ -39,7 +39,7 @@
                         <p>Developer| Engineer| Problem Solver</p>
                         <p>Master of shadows and the Internet</p>
                     </div>
-                    <a href="editprofile"><img src="./images/gear.png" alt="edit profile" id="gear"></a>
+                    <a href="#" onclick="switchName()"><img src="./images/gear.png" alt="edit profile" id="gear"></a>
                 </div>
             </div>
             <div id="edu-Box">
@@ -49,29 +49,29 @@
                 <div id="edBody">
                     <p>Coding Dojo - Full Stack Bootcamp</p>
                     <p id="date">Jan 2022 - May 2022</p>
-                    <p> Trible black belt in Python, MERN, and C#...</p>
+                    <p> Triple black belt in Python, MERN, and C#...</p>
                 </div>
             </div>
         </div>
         <div id="rightSide">
             <div id="crBox">
                 <div id="crHead">
-                    <p id="two">2</p>
+                    <p id="two"><span id ="counter">2</span></p>
                     <p>Connection Requests</p>
                 </div>
                 <div id="crBody">
-                    <div class="crPeople">
+                    <div class="crPeople" id="toddE">
                         <img src="./images/todd-s.jpg" alt="Todd E"> <span class="names">Todd E</span>
                         <div class="acceptClose">
-                            <img src="./images/accept-circle.png" alt="Accept">
-                            <img src="./images/close-circle.png" alt="Close">
+                            <img src="./images/accept-circle.png" alt="Accept" onclick="acceptRequest()" onclick="subtractFromCR()">
+                            <img src="./images/close-circle.png" alt="Close" onclick="closeRequest()">
                         </div>
                     </div>
-                    <div class="crPeople">
+                    <div class="crPeople" id="philK">
                         <img src="./images/phil-s.jpg" alt="Phil K"><span class="names">Phil K</span>
                         <div class="acceptClose">
-                            <img src="./images/accept-circle.png" alt="Accept">
-                            <img src="./images/close-circle.png" alt="Close">
+                            <img src="./images/accept-circle.png" alt="Accept" onclick="acceptRequest2()">
+                            <img src="./images/close-circle.png" alt="Close" onclick="closeRequest2()">
                         </div>
                     </div>
                 </div>
@@ -99,5 +99,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

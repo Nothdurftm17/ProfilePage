@@ -16,9 +16,6 @@
     color: whitesmoke;
 }
 #nav-links{
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
     margin-right: 150px;
     color: whitesmoke;
 }
@@ -38,13 +35,8 @@ ul li{
     justify-content: center;
     align-content: space-around;
 }
-#leftSide{
-    display: flex;
-    flex-direction: column;
-}
+
 #userCard{
-    display: flex;
-    flex-direction: column;
     margin: 30px 15px;
 }
 #userCard-Top{
@@ -82,8 +74,6 @@ h1{
     margin-left: 10px;
 }
 #userInfo{
-    display:flex;
-    flex-direction: column;
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -123,22 +113,16 @@ h1{
     border-style: solid;
     border-top: none;
     border-color: lightgray;
-    display: flex;
-    flex-direction: column;
 }
 #edBody p{
-    margin: 5px 20px;
+    margin: 8px 20px;
 }
 #date{
     color: gray;
-    margin-bottom: px;
     font-size: smaller;
 }
 /* right side----------------------------- */
-#rightSide{
-    display:flex;
-    flex-direction: column;
-}
+
 #rightSide img{
     height:30px;
     width:30px;
@@ -146,8 +130,6 @@ h1{
     margin-left: 10px;
 }
 #crBox{
-    display: flex;
-    flex-direction: column;
     margin: 30px 15px;
 }
 #crHead{
@@ -186,13 +168,9 @@ h1{
     margin-right: 10px;
 }
 .names{
-    margin-top: 7px;
-    padding-right: 20px;
-    margin-left: 5px;
+    margin: 7px 5px 0px 20px;
 }
 #ycBox{
-    display: flex;
-    flex-direction: column;
     margin:0px 15px;
 }
 #ycHead{
